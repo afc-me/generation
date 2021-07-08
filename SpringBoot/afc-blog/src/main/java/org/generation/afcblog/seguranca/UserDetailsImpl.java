@@ -12,12 +12,12 @@ public class UserDetailsImpl implements UserDetails {
 
 	private static final long SerialVersionUID = 1L;
 
-	private String userEmail;
+	private String userName;
 	private String password;
 
 	public UserDetailsImpl(Usuario user) {
 		super();
-		this.userEmail = user.getEmail();
+		this.userName = user.getUsuario();
 		this.password = user.getSenha();
 	}
 	
@@ -38,7 +38,7 @@ public class UserDetailsImpl implements UserDetails {
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return userEmail;
+		return userName;
 	}
 
 	@Override
