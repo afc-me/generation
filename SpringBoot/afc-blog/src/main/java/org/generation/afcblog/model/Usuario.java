@@ -15,16 +15,27 @@ public class Usuario {
 	private long id;
 	
 	@NotNull
-	@Size(min = 3, max = 50)
+	//@Size(min = 3, max = 50)
 	private String nome;
 	
 	@NotNull
-	@Size(min = 10, max = 50)
+	//@Size(min = 3, max = 50)
 	private String usuario;
 	
 	@NotNull
-	@Size(min = 5, max = 50)
+	//@Size(min = 5, max = 50)
 	private String senha;
+	
+	public Usuario(@NotNull String nome, @NotNull String usuario, @NotNull String senha) {
+		super();
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+
+	public Usuario() {
+		super();
+	}
 
 	public long getId() {
 		return id;
