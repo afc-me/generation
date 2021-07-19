@@ -1,0 +1,106 @@
+/* CSS Index */
+
+body{
+    margin: 0%;
+    box-sizing: border-box;
+    height: 20px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #BA55D3;
+    overflow: hidden;
+    top: 0%;
+}
+
+.hrtop{
+    margin-top: 50px;
+}
+
+.center{
+    text-align: center;
+}
+
+.fontparag{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fonttitle{
+    font-family: 'Special Elite', cursive;
+    background-color: #DA70D6;
+    padding: 10px;
+    font-size: 25px;
+    text-align: start;
+    border-radius: 40%;
+}
+
+.subtitle{
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: #BA55D3;
+
+}
+.subtitle1{
+    font-family: 'Rubik Mono One', sans-serif;
+    margin:  15px;
+    color: #BA55D3;
+    
+}
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.bgcolor{
+    background-color: #0D0D0D;
+}
+
+.menu li{
+    display: inline;
+    padding: 15px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Special Elite', cursive;
+}
+
+.menu li a:hover{
+    background-color: #4B0082;
+    padding: 10px;
+}
+
+
+.pad{
+    padding: 30px;
+}
+
+.imgmarge{
+    border-style: solid;
+    border-width: 10px;
+    width: 220px;
+    height: 310px;
+}
+
+footer{
+    background-color: white;
+}
+
+.social{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+
+.socialtm{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
