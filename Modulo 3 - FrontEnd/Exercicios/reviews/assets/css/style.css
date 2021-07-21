@@ -9,9 +9,24 @@ body{
 nav{
     position: fixed;
     width: 100%;
-    background-color: #BA55D3;
+    background-color: black;
     overflow: hidden;
     top: 0%;
+}
+
+footer{
+    background-color: white;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
 }
 
 .hrtop{
@@ -37,21 +52,21 @@ nav{
 
 .subtitle{
     font-family: 'Rubik Mono One', sans-serif;
-    background-color: #BA55D3;
+    background-color: #dd8af1;
 
 }
 .subtitle1{
     font-family: 'Rubik Mono One', sans-serif;
     margin:  15px;
-    color: #BA55D3;
+    color: #dd8af1;
     
 }
 .container{
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-items: center;
-    background-color: white;
+    align-items:flex-start;
+    background-color: rgba(234, 219, 236, 0.993);
 }
 
 .bgcolor{
@@ -65,7 +80,7 @@ nav{
 
 .menu li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
     font-family: 'Special Elite', cursive;
 }
@@ -85,18 +100,6 @@ nav{
     border-width: 10px;
     width: 220px;
     height: 310px;
-}
-
-footer{
-    background-color: white;
-}
-
-.social{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    background-color:white;
 }
 
 .socialtm{

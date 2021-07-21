@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEWS</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik+Mono+One&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body class="bgcolor">
+
+    <header>
+        <nav class="menu menubg">
+            <ul>
+                <li class="fonttitle">REVIEWS RUINS</li>
+                <li>
+                    <a href="index.html">FILMES</a>
+                </li>
+                <li>
+                    <a href="series.html">SÉRIES</a>
+                </li>
+                <li>
+                    <a href="contato.html">CONTATO</a>
+                </li>  
+            </ul>
+        </nav>
+</header>
+
+<hr class="hrtop">
+
+<h2 class="center subtitle1">CONTATO</h2>
+
+<div class="container center pad" >
+    <form class="fontparag">
+        <h3 class="subtitle">Deixe seu review</h3>
+        <label for="nome">Nome: </label> <br>
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id="txtNome"><br></div>
+
+        <label for="email">E-mail: </label><br>
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id="txtEmail"><br></div>
+
+        <label for="tipo">Review de: </label><br>
+        <select class="fontparag" name="tipo" id="tipo">
+            <option value="filme">Filme</option>
+            <option value="serie">Série</option>
+        </select>
+        <br><br>
+
+        <label for="review">Review: </label><br>
+        <textarea class="fontparag" name="review" id="review" cols="60" rows="5" onkeyup="validaReview()"></textarea>
+        <div id="txtReview"><br></div>
+
+        <label for="file">Poster: </label><br>
+        <input type="file" id="file">
+        <br><br>
+        <button id="enviar">Enviar</button>
+    </form>
+</div>
+
+<hr>
+
+<footer>
+    <div class="container">
+        <a href="https://github.com/afc-me" target="_blank">
+            <img class="socialtm" src="./assets/img/github.png">
+        </a>
+        <a href="https://www.linkedin.com/in/anaflaviacamelo/" target="_blank"> 
+            <img class="socialtm" src="./assets/img/linkedin.png">
+        </a>
+    </div>
+    <p class="center">
+        Todos os direitos reservados: AFC &copy;
+    </p>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
