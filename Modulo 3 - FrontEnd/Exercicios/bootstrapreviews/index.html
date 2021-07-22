@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reviews ruins</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #B8B8A5;">
+<body>
     
     <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #383832;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-family: 'Roboto', sans-serif;">
         <div class="container-fluid">
           <a class="navbar-brand text-light" href="#">MEUS FAVS</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,16 +83,20 @@
   </div>
   <!-- Carrossel -->
 
- <div class="container">
+ 
 
 <!--Jumbotron-->
-<div class="jumbotron jumbotron-fluid p-5">
+<div class="jumbotron jumbotron-fluid p-5 bg-secondary">
+  <div class="container">
         <h1 class="display-4">MEUS FILMES FAVORITOS</h1>
         <p class="lead">Página feita para falar dos meus filmes favoritos.</p>
 </div>
-<hr>
+</div>
+
+<div class="container">
+
 <!--Texto e Imagem-->
-<div class="row">
+<div class="row p-3">
     <div class="col-md-4">
         <h2>TENET</h2>
         <p class="lead">Diretor: Christopher Nolan<br>Gênero: Ficção Científica<br>Ano: 2020</p>
@@ -152,8 +156,33 @@
         <iframe width="400" height="250" src="https://www.youtube.com/embed/uv1V9BOb2M8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
-
 </div>
+<hr>
+
+<!--Rodapé-->
+<footer class="bg-secondary p-3" style="font-family: 'Roboto', sans-serif;">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-center">
+      <a href="https://github.com/afc-me" target="_blank" class="p-2">
+        <img src="./assets/img/github.png" style="width: 40px; height: 40px;">
+    </a>
+    <a href="https://www.linkedin.com/in/anaflaviacamelo/" target="_blank" class="p-2"> 
+        <img src="./assets/img/linkedin.png" style="width: 40px; height: 40px;">
+    </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-center">
+        Todos os direitos reservados: AFC &copy;
+    </p>
+    </div>
+  </div>
+  </div>
+</footer>
+
+
 
 
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
