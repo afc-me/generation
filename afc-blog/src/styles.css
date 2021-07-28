@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Avatar' ;
+    src: url(./assets/font/Herculanum.woff);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.f-avatar{
+    font-family:'Avatar', Times, serif;
+}
+
+.f-padrao{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bg-bender{
+    background-color: #b3a289c9;
+}

@@ -1,0 +1,22 @@
+ul.social{
+    list-style: none;
+    padding: 0%;
+}
+
+ul.social li{
+    display: inline;
+    margin: 0%;
+    padding: 5px;
+}
+
+.fa-github-square:hover{
+    color: #24292E;
+}
+
+.fa-linkedin:hover{
+    color: #0072b1;
+}
+
+.fs-small{
+font-size: 13px;
+}
