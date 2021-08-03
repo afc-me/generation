@@ -6,6 +6,10 @@
     font-display: swap;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .f-avatar{
     font-family:'Avatar', Times, serif;
 }
@@ -16,4 +20,8 @@
 
 .bg-bender{
     background-color: #b3a289c9;
+}
+
+.rounded-p{
+    border-radius: 10px;
 }
