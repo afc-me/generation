@@ -25,10 +25,10 @@
     <div class="row p-3">
         <div class="col-md-3 bg-light rounded-p me-5 ms-3 f-padrao fw-bold" >
             <div class=" d-flex justify-content-center m-3">
-                <img src="{{foto}}" alt="" width="150" height="150" class="img-fluid rounded-circle img-thumbnail">
+                <img src="{{foto}}" alt="" class="img-fluid rounded-circle img-thumbnail" style="width: 130px; height: 130px;">
             </div>
-            <h4 class="text-center">{{nome}}</h4>
-            <p class="text-center lead">@{{usuario}}</p>
+            <h4 class="text-center fw-bold">{{nome}}</h4>
+            <p class="text-center lead fs-user">@{{usuario}}</p>
         </div>
 
         <div class="col-md-8 rounded-p bg-light f-padrao fw-bold" id="postagens">
@@ -48,22 +48,47 @@
             </ul>
         
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">
+                <div class="tab-pane fade" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">
                     Meus posts
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Todas as postagens</div>
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    Todas as Postagens
+                </div>
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Por tema</div>
             </div>
         </div>
     </div>
 </div>
 
+
 <div id="newposts" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nova Postagem</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
             <div class="modal-body">
-                <p>Content</p>
+                
+                <div class="form-control">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="Digite o título">
+                    
+                    <label for="texto">Texto</label>
+                    <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
+               
+                    <label for="tema">Escolha um tema ou <a data-bs-dismiss="modal" routerLink='/tema'>cadastre um novo</a>:</label>
+                    <select class="form-control" name="tema" id="tema">
+                        <option value="">Tema</option>
+                    </select>
+
+                </div>
+
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Publicar</button>
+              </div>
         </div>
     </div>
 </div>
