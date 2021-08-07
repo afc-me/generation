@@ -1,0 +1,32 @@
+<div class="container-fluid bg-avatar">
+
+    <div class="row">
+
+        <div class="col-md-12 text-white mb-5 mt-5">
+
+            <h1 class="f-avatar fs-titulo text-center">APAGAR TEMA</h1>
+            <h5 class="f-padrao fw-bold text-center">Você tem certeza que deseja apagar este tema? Todas as postagens relacionadas a ele também serão apagadas.</h5>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container f-padrao fw-bold">
+    <div class="row d-flex justify-content-center mt-3 mb-3">
+        <div class="col-md-4 bg-light p-3 rounded-p">
+
+            <div class="form-group mb-4 mt-4">
+                <h5 class="text-center fs-1">Tema:</h5>
+                <h5 class="text-center fs-2">{{tema.descricao}}</h5>
+            </div>
+
+            <div class="d-flex justify-content-center mt-2 mb-3">
+                <button class="btn btn-danger me-3" routerLink='/tema'>Cancelar</button>
+                <button class="btn btn-success" (click)="apagar()">Apagar</button>
+            </div>
+
+        </div>
+    </div>
+</div>

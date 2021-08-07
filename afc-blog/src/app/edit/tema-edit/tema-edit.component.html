@@ -1,0 +1,32 @@
+<div class="container-fluid bg-avatar">
+
+    <div class="row">
+
+        <div class="col-md-12 text-white">
+
+            <h1 class="f-avatar fs-titulo text-center">ATUALIZAR TEMA</h1>
+            <h5 class="f-padrao fw-bold text-center">atualize aqui um tema já existente</h5>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container f-padrao fw-bold">
+    <div class="row d-flex justify-content-center mt-3 mb-3">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label class="mb-2 fs-5" for="descricao">Descrição</label>
+                <input [(ngModel)]="tema.descricao" id="descricao" class="form-control" type="text">
+            </div>
+
+            <div class="d-flex justify-content-center mt-2">
+                <button class="btn btn-danger me-3" routerLink='/tema'>Cancelar</button>
+                <button class="btn btn-success" (click)="atualizar()">Atualizar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
