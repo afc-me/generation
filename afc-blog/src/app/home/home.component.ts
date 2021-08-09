@@ -43,6 +43,7 @@ export class HomeComponent implements OnInit {
     }
     this.getAllTemas()
     this.getAllPosts()
+    console.log(this.findByIdUser())
   }
 
   getAllTemas(){

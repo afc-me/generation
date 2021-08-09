@@ -1,0 +1,41 @@
+<div class="container-fluid bg-avatar">
+
+    <div class="row">
+
+        <div class="col-md-12 text-white mt-5 mb-5">
+
+            <h1 class="f-avatar fs-titulo text-center">ATUALIZAR POSTAGEM</h1>
+            <h5 class="f-padrao fw-bold text-center">atualize aqui uma postagem já existente</h5>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container f-padrao fw-bold">
+    <div class="row d-flex justify-content-center mt-3 mb-3">
+        <div class="col-md-6">
+
+            <div class="form-control p-3 fw-bold">
+                <label for="titulo">Título</label>
+                <input [(ngModel)]="postagem.titulo" type="text" class="form-control" id="titulo" placeholder="Digite o título">
+                
+                <label for="texto">Texto</label>
+                <textarea [(ngModel)]="postagem.texto" class="form-control" name="texto" id="texto" rows="3"></textarea>
+           
+                <label for="tema">Escolha um tema ou <a data-bs-dismiss="modal" routerLink='/tema'>cadastre um novo</a>:</label>
+                <select class="form-control" name="tema" id="tema" [(ngModel)]="idTema" (change)="findByIdTema()">
+                    <option *ngFor="let item of listaTemas" value="{{item.id}}">{{item.descricao}}</option>
+                </select>
+
+            </div>
+
+            <div class="d-flex justify-content-center mt-2">
+                <button class="btn btn-danger fw-bold me-4" routerLink='/home'>Cancelar</button>
+                <button class="btn btn-success fw-bold" (click)="atualizar()">Atualizar</button>
+            </div>
+
+        </div>
+    </div>
+</div>

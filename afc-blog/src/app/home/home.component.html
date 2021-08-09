@@ -23,7 +23,7 @@
 
 <div class="container-fluid mb-3">
     <div class="row p-3">
-        <div class="col-md-3 bg-light rounded-p me-5 ms-3 f-padrao fw-bold" >
+        <div class="col-md-3 bg-light rounded-p me-5 ms-3 f-padrao fw-bold" style="max-height: 250px;" >
             <div class=" d-flex justify-content-center m-3">
                 <img src="{{foto}}" alt="" class="img-fluid rounded-circle img-thumbnail" style="width: 130px; height: 130px;">
             </div>
@@ -50,14 +50,19 @@
             <div class="tab-content" id="myTabContent">
                 
                 <div class="tab-pane fade" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">
+                    
                     <div class="card mb-3" *ngFor="let item of user.postagem">
                         <div class="card-header">
-                          <img src="{{item.usuario.foto}}" alt="" class="img-fluid rounded-circle" style="width: 30px; height: 30px;"> @{{item.usuario.usuario}}<small class="text-muted ms-2">{{item.date | date: 'HH:mm'}} · {{item.date | date: 'dd/MM/yyyy'}}</small> 
+                          <img src="{{foto}}" alt="" class="img-fluid rounded-circle" style="width: 30px; height: 30px;"> @{{usuario}}<small class="text-muted ms-2">{{item.date | date: 'HH:mm'}} · {{item.date | date: 'dd/MM/yyyy'}}</small> 
                         </div>
                         <div class="card-body">
                             <h5 class="card-title fw-bold mb-0">{{item.titulo}} </h5>
                             <small class="text-muted">{{item.tema.descricao}}</small>
                             <p class="card-text mt-2">{{item.texto}}</p>
+
+                            <a [routerLink]="[ '/postagem-edit', item.id ]" class="text-info me-3" href="">Editar</a>
+                            <a [routerLink]="[ '/postagem-delete', item.id ]" class="text-danger" href="">Apagar</a>
+
                         </div>
                     </div>
                 </div>
