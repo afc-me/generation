@@ -36,6 +36,8 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
+    window.scroll(0,0)
     
     if(environment.token==''){
      // alert('Sua seção expirou, faça login novamente.')
@@ -43,7 +45,6 @@ export class HomeComponent implements OnInit {
     }
     this.getAllTemas()
     this.getAllPosts()
-    console.log(this.findByIdUser())
   }
 
   getAllTemas(){
@@ -64,7 +65,9 @@ export class HomeComponent implements OnInit {
     })
   }
 
+
   findByIdUser(){
+    console.log(environment.token)
     this.authService.getByIdUser(this.idUser).subscribe((resp: User)=>{
       this.user = resp
     })
